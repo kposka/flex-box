@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    max-width:320px;
+    margin:0 auto;
+    height:100vh;
+    background: rgb(122,27,27);
+    
+}
+
+.textmaxwidth,
+.h3maxwidth{
+    display:none;
+}
+
+.arrow{
+    display:none;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    height:10%;
+}
+
+.logo{
+    transform: scale(0.5);
+}
+
+.menu{
+    transform: scale(0.6);
+}
+
+.navmenu{
+    display:flex;
+    margin-right:85px;
+    max-width:40%;
+}
+
+.singup{
+    height:57%;
+    width:30%;
+    background:pink;
+    display:none;
+}
+
+.navmenu a{
+    line-height:83px;
+    text-decoration: none;
+    color:White;
+    width:80%;
+}
+
+.contentContainer{
+    margin:20px;
+    height:55%;
+    position:relative;
+}
+
+
+h3{
+    color:#1587EA;
+}
+
+p{
+    color:White;
+    margin:10px 0;
+}
+button{
+    width:70%;
+    padding:10px;
+}
+
+.photo{
+    position:absolute;
+    transform:rotate(90deg);
+    width:100%;
+    top:300px;
+    left:0;
+}
+
+.signup{
+    display:none;
+}
+.h3Tablet,
+.textTablet{
+    display:none;
+}
+.blue{
+    height:43%;
+    background:powderblue;
+}
+
+
+@media (min-width:320px) and (max-width:768px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+        max-width:768px;
+        margin:0 auto;
+        height:100vh;
+        background: rgb(122,27,27);
+    }
+
+    
+    nav{
+        justify-content: space-around;
+    }
+    .menu{
+        margin-left:10px;
+    }
+
+    .navmenu{
+        width:20%;
+    }
+    a{
+        width:80%;
+    }
+
+    .menu{
+        transform: scale(0.5);
+    }
+    
+    .photo{
+        height:300px;
+        width:300px;
+        position:absolute;
+        top:210px;
+        left:115px;
+    }
+
+    .h3Tablet{
+        display:block;
+        position:absolute;
+        top:600px;
+        margin-left:25px;
+    }
+    .textTablet{
+        display:block;
+        position:absolute;
+        top:650px;
+        margin-left:25px;
+    }
+
+   
+}
+
+@media (min-width:768px){
+    .container{
+        max-width:1200px;
+        display:flex;
+        flex-wrap:wrap;
+        background:none;
+    }
+    nav{
+        width:70%;
+        background: rgb(122,27,27);
+        margin:0;
+    }
+
+    .navmenu {
+        width:15%;
+    } 
+    .contentContainer{
+        width:70%;
+        background: rgb(122,27,27);
+        margin:0;
+        height:90vh;
+    }
+    .contentContainer h3{
+        margin:20px 50px;
+    }
+    .contentContainer p{
+        margin:20px 50px;
+        width:30%;
+    }
+    .arrow{
+        display:block;
+        height:15px;
+        width:15px;
+        margin-left:160px;
+
+    }
+
+    .photo{
+        width:50%;
+        height:50%;
+        transform:rotate(360deg);
+        left:630px;
+    }
+
+    .signup{
+        display:block;
+        height:40%;
+        width:30%;
+        
+    }
+
+    button{
+        display:none;
+    }
+    .blue{
+        width:30%;
+        height:60%;
+    }
+    .textTablet,
+    .h3Tablet{
+        display:none;
+    }
+
+    .h3maxwidth{
+        position:absolute;
+        top:400px;
+        display:block;
+    }
+
+    .textmaxwidth{
+        position:absolute;
+        top:450px;
+        display:block;
+    }
+
+    form{
+        display:flex;
+        flex-direction: column;
+        margin:0 50px;
+    }
+
+    form input{
+        margin:0 0 10px 0;
+    }
+
+    h4{
+        margin:25px 0px 10px 50px
+    }
+    .formButton{
+        display:block;
+        margin:0 auto;
+    }
+
+    .textmaxwidth{
+        display:block;
+    }
+    span{
+        color:blue;
+    }
+
+}
